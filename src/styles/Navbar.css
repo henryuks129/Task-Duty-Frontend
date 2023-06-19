@@ -1,0 +1,42 @@
+.nav-body{
+    height: 70px;
+    /* width: 1440px; */
+    background-color: white;
+    border: 0.5px solid #B8B6B6;
+}
+
+/* style images */
+
+.task-logo{
+    width: 157px;
+    height: 40px;
+    top: 26px;
+    left: 170px;
+    /* cursor: none; */
+}
+
+.profile-image{
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+.profile-image:hover{
+    /* cursor: pointer; */
+    /* transition: background 0.5s ease; */
+}
+
+/* Transition */
+
+.transform{
+    transition-duration: 300ms ease-out;
+}
+
+/* position */
+
+.status{
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    top: 0.14rem;
+    right: 4.3rem;
+}

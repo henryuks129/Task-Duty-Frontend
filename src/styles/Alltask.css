@@ -1,0 +1,75 @@
+/* button styles */
+.button-1{
+    /* background-color: transparent; */
+    background: #974FD0;
+    width: 126px;
+    height: 50px;
+    color: white;
+    border-radius: 8px;
+
+}
+
+.button-2{
+    background-color: transparent;
+    width: 151px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #974FD0;
+    color: #974FD0;
+    font-size: 20px;
+    flex-grow: 0;
+    order: 1;
+}
+
+/* tag styles */
+
+.orange{
+    color: #faf9fb;
+}
+
+.green b{
+    color: #F38383;
+}
+
+/* text styles */
+
+.description-text{
+    width: 1076px;
+    height: 95px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #737171;
+}
+
+.title-text{
+    width: 335px;
+    height: 43px;
+    font-weight: 400;
+    line-height: 43px;
+    color: #292929;
+}
+
+/* footer */
+.to-top{
+    text-decoration: underline;
+    color: #974FD0;
+    font-weight: 400;
+    height: 32px;
+    font-size: 26px;
+}
+
+/* images */
+
+.edit-image{
+    position: absolute;
+    background-color: red;
+    right: 21.1rem;
+    bottom: 2.5rem;
+}
+
+.delete-image{
+    position: absolute;
+    right: 11.5rem;
+    bottom: 3rem;
+}
