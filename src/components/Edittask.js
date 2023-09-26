@@ -29,7 +29,7 @@ const Edittask = () => {
   //   navigate('/Alltask')
   // }
   const loadTask = async ()=>{
-    const result = await axios.get(`http://localhost:6060/tasks/singleTasks/${id}`)
+    const result = await axios.get(`https://task-duty-backend-t6j4.onrender.com/tasks/singleTasks/${id}`)
     setData(result.data)
     console.log(result.data);
   }

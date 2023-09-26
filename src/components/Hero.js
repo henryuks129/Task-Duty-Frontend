@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import heroimage from '../assets/hero.svg';
-import '../styles/Hero.css'
+import '../styles/Hero.css';
 
 const Hero = () => {
   const navigation = useNavigate();

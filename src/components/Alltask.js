@@ -9,7 +9,7 @@ const Alltask = () => {
   const {id} = useParams();
   const [data, setData] = useState([]);
   const navigate = useNavigate();
-  let url = 'http://localhost:6060/tasks/allTasks';
+  let url = 'https://task-duty-backend-t6j4.onrender.com/tasks/allTasks';
   const getFetchedData = async ()=>{
     let fetchUrl = await axios.get(url);
     setData(fetchUrl.data);
@@ -19,7 +19,7 @@ const Alltask = () => {
     getFetchedData();
   },[]);
   function handleDelete(id){
-    axios.delete(`http://localhost:6060/tasks/delete/${id}`)
+    axios.delete(`https://task-duty-backend-t6j4.onrender.com/tasks/delete/${id}`)
     window.location.reload();
   }
   const toTop = ()=>{
@@ -50,8 +50,10 @@ const Alltask = () => {
                <img src={edit} alt=""  className='edit-image'/>
              </div>
               <div>
-                <button onClick={()=>handleDelete(_id)} className=" btn-primary button-2">delete item</button>
-                <img src={deletes} alt="" className='delete-image'/>
+                <button onClick={()=>handleDelete(_id)} className=" btn-primary button-2">
+                  delete item
+                  </button>
+                  {/* <img src={deletes} alt="" className='delete-image'/> */}
               </div>
               </div>
             </div>

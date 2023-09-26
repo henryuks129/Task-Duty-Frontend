@@ -15,18 +15,18 @@ const Newtask = () => {
   const [description, setDescription] = useState('');
   const [tag, setTag] = useState('');
   const [author, setAuthor] = useState('');
-  let url = 'http://localhost:6060/tasks/allTasks';
-  const getFetchedData = async ()=>{
-    let fetchUrl = await axios.get(url);
-    setData(fetchUrl.data);
-    console.log(fetchUrl.data);
-  };
-  useEffect(()=>{
-    getFetchedData();
-  },[data]);
+  // let url = 'https://task-duty-backend-t6j4.onrender.com/allTasks';
+  // const getFetchedData = async ()=>{
+  //   let fetchUrl = await axios.get(url);
+  //   setData(fetchUrl.data);
+  //   console.log(fetchUrl.data);
+  // };
+  // useEffect(()=>{
+  //   getFetchedData();
+  // },[data]);
   function handlePost(e){
     e.preventDefault();
-    axios.post('http://localhost:6060/tasks/createTasks',{
+    axios.post('https://task-duty-backend-t6j4.onrender.com/tasks/createTasks',{
       title:title,
       description:description,
       tag:tag,
