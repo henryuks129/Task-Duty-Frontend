@@ -61,7 +61,7 @@ const Nav = ({ name, ...props }) => {
         </Offcanvas.Body>
         </Offcanvas>
           <div className='status'>
-            <img src={status} alt="" />
+            {/* <img src={status} alt="" /> */}
           </div>
             </li>
           </ul>
